@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$1M Attention — как привлечь максимум внимания к своему MVP</title>
+<meta name="description" content="Малозатратные и высокоэффективные способы привлечь максимум внимания к вашему MVP. Гайд по «attentioneering» (инжинирингу внимания): фреймворк LEHI и 17 проверенных форматов постов.">
+<style>
+  :root{
+    --bg:#ffffff;
+    --surface:#f6f7f9;
+    --surface-2:#eef0f3;
+    --text:#1c1e21;
+    --muted:#5b6168;
+    --border:#e2e5ea;
+    --accent:#1565d8;
+    --accent-soft:#e8f0fe;
+    --badge:#111418;
+    --shadow:0 1px 2px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0f1115;
+      --surface:#171a20;
+      --surface-2:#1d2128;
+      --text:#e8eaed;
+      --muted:#9aa1ab;
+      --border:#2a2f38;
+      --accent:#6ea8fe;
+      --accent-soft:#16243b;
+      --badge:#e8eaed;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+    font-size:18px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 96px}
+  a{color:var(--accent);text-decoration:none;word-break:break-word}
+  a:hover{text-decoration:underline}
+
+  header.hero{padding:24px 0 8px;border-bottom:1px solid var(--border);margin-bottom:8px}
+  .eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:0 0 10px}
+  h1{font-size:clamp(34px,7vw,54px);line-height:1.05;letter-spacing:-.02em;margin:0 0 12px;font-weight:800}
+  .lead{font-size:21px;color:var(--text);margin:0 0 4px;font-weight:600}
+
+  h2{font-size:28px;line-height:1.2;letter-spacing:-.01em;margin:56px 0 16px;font-weight:800}
+  h3{font-size:20px;margin:0 0 14px;font-weight:700}
+  h4{font-size:18px;margin:28px 0 8px;font-weight:700}
+  p{margin:0 0 16px}
+  strong{font-weight:700}
+
+  .callout{
+    background:var(--accent-soft);
+    border:1px solid var(--border);
+    border-left:4px solid var(--accent);
+    border-radius:12px;
+    padding:18px 20px;
+    margin:20px 0;
+    font-size:17px;
+  }
+  .callout .term{font-weight:800}
+
+  figure{margin:22px 0;text-align:center}
+  figure img{
+    max-width:100%;height:auto;
+    border:1px solid var(--border);
+    border-radius:12px;
+    box-shadow:var(--shadow);
+    background:var(--surface);
+  }
+  figcaption{font-size:14px;color:var(--muted);margin-top:8px}
+
+  ul,ol{margin:0 0 16px;padding-left:1.3em}
+  li{margin:6px 0}
+
+  /* Карточка примера */
+  .example{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:22px 22px 8px;
+    margin:24px 0;
+    box-shadow:var(--shadow);
+  }
+  .example > h3{display:flex;gap:12px;align-items:baseline;margin-bottom:16px}
+  .num{
+    flex:0 0 auto;
+    background:var(--badge);
+    color:var(--bg);
+    font-size:14px;font-weight:800;
+    border-radius:8px;
+    padding:3px 10px;
+    line-height:1.4;
+    white-space:nowrap;
+  }
+  .example figure{margin:16px 0}
+  .meta{margin:14px 0 4px}
+  .meta .label{font-weight:800;color:var(--text)}
+  .source{font-size:14px;color:var(--muted);margin:-4px 0 12px}
+  blockquote{
+    margin:0 0 16px;padding:8px 0 8px 18px;
+    border-left:3px solid var(--border);
+    color:var(--text);font-style:italic;
+  }
+  blockquote cite{display:block;font-style:normal;color:var(--muted);font-size:15px;margin-top:8px}
+
+  footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <p class="eyebrow">$1M Attention</p>
+  <h1>$1M Attention</h1>
+  <p class="lead">Малозатратные и высокоэффективные способы привлечь максимум внимания к вашему MVP.</p>
+  <div class="callout">
+    <span class="term">Attentioneering (инжиниринг внимания), сущ.</span> — стратегическое использование алгоритмов, психологических приёмов и оптимизации контента, чтобы захватывать и удерживать внимание к бренду, бизнесу или продукту. Часто включает эксплуатацию механик конкретных платформ, трендовых тем и поведенческих инсайтов ради видимости и вовлечения в конкурентной цифровой среде.
+  </div>
+</header>
+
+<h2>Почему мы говорим об инжиниринге внимания так рано?</h2>
+<p>Первый вопрос, который у вас, наверное, возникает: «Я всего три недели в деле, я ещё не готов показывать свою штуку!» И вы правы. Продукт пока не там, где хотелось бы, — возможно, у вас даже нет работающего продукта. Но в этом и суть.</p>
+<p>Вы должны постоянно думать о том, как поставить реальных людей перед вашей штукой, то есть о дистрибуции. Привлекайте внимание <strong>до</strong> того, как продукт появился. Привлекайте внимание, пока вы его строите. Привлекайте внимание во время запуска. Привлекайте внимание после запуска. Всегда привлекайте внимание.</p>
+<p>Мне не нравится слово «запуск»… потому что оно подразумевает событие, которое случается лишь однажды. Поэтому до конца этого документа мы будем называть это просто <strong>вниманием</strong>.</p>
+<p>Успешные основатели знают этот секрет: всё дело в дистрибуции, в глазах аудитории и во внимании. Внимание не ограничивается постами в соцсетях. Это может быть прямой аутрич, разговоры с клиентами и даже офлайн-мероприятия.</p>
+<p>Паршивый продукт с вниманием всегда побьёт хороший продукт без внимания. Внимание даёт пользователей, даёт обратную связь и приносит деньги. Отсутствие внимания ведёт к провалу стартапов. Продукт с вниманием всегда выигрывает у продукта без него.</p>
+<p>Внимание решит все ваши проблемы. Оно приведёт пользователей. Оно принесёт деньги. И даже если ваш продукт плох, оно даст вам информацию, нужную, чтобы его починить.</p>
+
+<figure><img src="images/image14.png" alt="Иллюстрация к разделу о внимании" loading="lazy"></figure>
+
+<p>Наша цель — чтобы вы вышли из зоны комфорта и начали показывать свою идею реальным людям. Этот документ даст вам бесконечный запас идей, как сделать это уже сегодня.</p>
+
+<h2>Поговорим о страхе и страхе провала</h2>
+<p>Прежде чем говорить о привлечении внимания, нужно разобраться с вашими страхами. Представьте прямо сейчас: вы пишете твит или пост, например, в LinkedIn о том, что вы создаёте. Звучит страшно, да? «Что люди скажут? Что они обо мне подумают? А вдруг я провалюсь?»</p>
+<p>Эти чувства абсолютно нормальны. Но если вы их не преодолеете, вы, скорее всего, никогда ничего не выпустите. Запускаться страшно. Но альтернатива (не получить ни одного пользователя) в 10 раз хуже. Поэтому:</p>
+<ul>
+  <li>Вам будет казаться, что вы кричите в пустоту.</li>
+  <li>Вас будут отвергать.</li>
+  <li>Ваши друзья будут вас осуждать.</li>
+</ul>
+<p>95% людей так и не переступают через это — и никогда ничего не создают. Единственный способ это преодолеть — просто сделать. Хватит нескольких раз, и это станет нормой, и вы больше об этом не вспомните.</p>
+<p>Если вы на это способны — поздравляю, вы на верном пути к тому, чтобы стать успешным, строить продукты, меняющие мир, и бизнес, меняющий вашу жизнь. Так давайте сделаем это вместе.</p>
+
+<h2>Что такое инжиниринг внимания?</h2>
+<div class="callout">
+  <span class="term">Attentioneering (инжиниринг внимания), сущ.</span> — стратегическое использование алгоритмов, психологических приёмов и оптимизации контента, чтобы захватывать и удерживать внимание к бренду, бизнесу или продукту. Часто включает эксплуатацию механик конкретных платформ, трендовых тем и поведенческих инсайтов ради видимости и вовлечения в конкурентной цифровой среде.
+</div>
+
+<h3>Как инжиниринг внимания экономит мне время?</h3>
+<p>Ваша цель здесь, как и с MVP, — собирать информацию. Внимание. Вовлечение. Комментарии. Email. Номера телефонов. Знание о клиентах. Идеи фич. Эта информация расскажет вам всё, что нужно знать о вашей идее. Она хорошая? Плохая? Нужно ли делать пивот? Где тусуются мои клиенты?</p>
+<p>Конечно, вы можете проделать всё это и понять, что ваша идея так себе и её не стоит строить. Но в этом и смысл! Вы должны полностью исчерпать свою идею. Как только вы это сделаете — вы будете знать.</p>
+<p>Вот вопросы, которые стоит себе задать. Как понять, что вы делаете инжиниринг внимания правильно?</p>
+<ul>
+  <li>Знают ли ваши друзья и семья о вашем новом бизнесе?</li>
+  <li>Получали ли вы отказы?</li>
+  <li>Задевали ли ваши чувства?</li>
+  <li>Получали ли негативную обратную связь?</li>
+  <li>Как вы справлялись с негативной обратной связью?</li>
+  <li>Были ли моменты, когда хотелось сдаться? Как вы прорвались?</li>
+  <li>Сильно ли изменились ваш продукт/оффер после запуска?</li>
+  <li>Писали ли вы случайным людям о своей штуке?</li>
+</ul>
+<p>Если вы ответили «да» на некоторые или все эти вопросы — значит, вы делаете всё правильно. И даже если идея окажется плохой, вы получите информацию о том, что нужно менять, куда пивотить или что попробовать ещё.</p>
+<p>Если вы ответили «нет» на большинство — пересмотрите, действительно ли вы полностью исчерпали свою идею и свои ресурсы.</p>
+
+<h2>Как планировать инжиниринг внимания</h2>
+<p>В этом документе я поделюсь десятками примеров того, как привлечь внимание к вашей идее. Идей так много, что это может ошеломлять. Поэтому вот мой совет, как действовать максимально эффективно.</p>
+
+<h3>Фреймворк LEHI</h3>
+<p>Смотрите… все разные. У всех разные навыки. У всех разные знания. Если вы хороший автор — возможно, стоит опереться на LinkedIn. Если вы мастер видео — сфокусируйтесь на платформах, заточенных под видео. Если вы король мемов — может, вы зайдёте вирусно на X. Если у вас куча связей в индустрии — сделайте упор на прямой аутрич к своей сети.</p>
+<p>Единственное ограничение — ваше время, поэтому подход такой: как получить максимум глаз на вашей штуке при минимуме работы? Я не могу ответить за вас, потому что мало вас знаю — вы должны разобраться сами.</p>
+<p>Мой любимый способ об этом думать — это <strong>LEHI</strong>. Lowest effort, highest impact — наименьшие усилия, наибольший эффект.</p>
+
+<figure><img src="images/image13.png" alt="Шаблон LEHI" loading="lazy"><figcaption>Шаблон LEHI (очень упрощённый)</figcaption></figure>
+
+<h3>Пара правил большого пальца</h3>
+
+<h4>Вовлечение не стоит ничего, если за ним нет намерения</h4>
+<p>Весь инжиниринг внимания должен иметь цель и вести намерение к вашему продукту. Можно постить про то, что вы ели на завтрак, но это не приведёт продажи к вашему B2B SaaS. Улавливаете? Об этом важно думать, чтобы держать в голове намерение (intent). Смотрите на привлечение внимания именно с этой стороны, а НЕ с точки зрения количества просмотров, подписчиков или вовлечения.</p>
+
+<h4>Правило большого пальца: не используйте ИИ</h4>
+<p>Люди это сразу раскусят — выглядит неискренне, и они не будут взаимодействовать с вашим контентом. Да, вы можете и должны использовать ИИ, чтобы находить идеи, улучшить отдельное слово и т.п. Но я призываю вас тратить своё «глубокое» время на то, чтобы писать отличный текст, оптимизировать под внимание и вкладывать заботу в работу. Это решает всё.</p>
+
+<h2>Как пользоваться идеями отсюда</h2>
+<p>Я поделюсь с вами таким количеством идей, что это может ошеломить. Ваша задача — выбрать те, что действительно цепляют именно вас, прогнать их через фреймворк LEHI и приступить к работе.</p>
+<p>Этот документ — work in progress: он будет постоянно дополняться, обновляться, и мы будем собирать идеи от вас, ребята из акселератора, потому что мы видим всё 👀</p>
+<p>Каждый пример здесь — это <strong>формат</strong>: по сути, логика, лежащая в его основе, должна срабатывать многократно и на разных каналах. Воспринимайте эти примеры как шаблоны и подгоняйте под них свой продукт, своё преимущество, свои навыки, свою страсть и т.д. Все эти идеи построены на сильных принципах инжиниринга внимания, и внутри каждой я их объясню.</p>
+
+<div class="example">
+<h3><span class="num">#1</span> Личная сеть: «Готово.»</h3>
+<figure><img src="images/image7.png" alt="Пример поста: It's done" loading="lazy"></figure>
+<p class="meta"><span class="label">Каналы:</span> LinkedIn, Facebook, Instagram, X и т.д.</p>
+<p class="meta"><span class="label">Почему это работает:</span> Вы даёте друзьям, коллегам и семье знать, как усердно вы над чем-то работали. Этот человек написал 300 страниц и потратил год! Он также проявляет смелость, публикуя это с риском провала. Людям это нравится. Поэтому они лайкнут, провзаимодействуют — и алгоритм поднимет пост.</p>
+<p class="meta"><span class="label">Как сделать у себя:</span> Буквально скопируйте текст и замените слова под свою ситуацию. Постарайтесь подчеркнуть, как усердно вы работали, и добавьте драмы. Может, не используйте так много эмодзи :) и, если получится, приложите фото ВАС к посту.</p>
+<p class="meta"><span class="label">Ещё примеры:</span> <a href="https://i.imgur.com/3jR8sn8.png" target="_blank" rel="noopener">i.imgur.com/3jR8sn8.png</a></p>
+</div>
+
+<div class="example">
+<h3><span class="num">#2</span> Reddit: «как вам?»</h3>
+<figure><img src="images/image11.png" alt="Пример поста на Reddit" loading="lazy"></figure>
+<p class="source"><a href="https://www.reddit.com/r/learnprogramming/comments/7mhi6x/spent_the_last_6_months_building_a_programming/" target="_blank" rel="noopener">reddit.com/r/learnprogramming — Spent the last 6 months building a programming…</a></p>
+<p class="meta"><span class="label">Почему это работает:</span> Здесь всё дело в заголовке. Я знаю того, кто это запостил. Мы оба строили продукты в одно время. До этого он уже постил в сабреддит, и пост набрал 0 апвоутов.</p>
+<ul>
+  <li>Первая попытка: «Hacksource — поисковик по программистским туториалам».</li>
+  <li>Вторая попытка: «Потратил последние 6 месяцев на создание поисковика по программистским туториалам, как вам?»</li>
+</ul>
+<p>Второй заголовок делает это личным. Просит обратной связи. Он человечнее. И именно это всё изменило.</p>
+<p class="meta"><span class="label">Как сделать у себя:</span> Найдите сабреддиты, совпадающие с вашим целевым клиентом, и попробуйте. Reddit бывает строг к самопиару, так что пробуйте в разных сабреддитах — и кого волнует, если вас забанят.</p>
+</div>
+
+<div class="example">
+<h3><span class="num">#3</span> Hacker News: «Я сделал…»</h3>
+<figure><img src="images/image21.png" alt="Пример поста на Hacker News" loading="lazy"></figure>
+<p class="source"><a href="https://news.ycombinator.com/item?id=29167580" target="_blank" rel="noopener">news.ycombinator.com/item?id=29167580</a></p>
+<p class="meta"><span class="label">Каналы:</span> Hacker News</p>
+<p class="meta"><span class="label">Почему это работает:</span> Здесь тоже всё дело в заголовке. Этого человека я тоже знаю — пост сгенерировал сотни тысяч в трафике и платящих клиентов в первый же день. Он делает пару вещей хорошо:</p>
+<ul>
+  <li>«Я сделал» — это показывает, что вы реальный человек, и людям хочется вас поддержать.</li>
+  <li>«Privacy-first» (приватность прежде всего) — это идеально описывает аудиторию Hacker News. Они любят приватность и ненавидят Google.</li>
+</ul>
+<p class="meta"><span class="label">Как сделать у себя:</span> Если ваша идея нацелена на аудиторию Hacker News — попробуйте что-то такое. Если нет — подумайте, как одну фичу можно сделать «дружелюбной к Hacker News». Даже если ваш продукт не интересен аудитории HN, попробовать всё равно стоит. Подумайте, как это сделать в сабреддитах или других местах, где тусуются ваши клиенты. За неимением лучшего слова — подыгрывайте своей аудитории.</p>
+<p class="meta"><span class="label">Ещё примеры:</span> <a href="https://news.ycombinator.com/item?id=29167580" target="_blank" rel="noopener">news.ycombinator.com/item?id=29167580</a></p>
+</div>
+
+<div class="example">
+<h3><span class="num">#4</span> Twitter/X: задайте вопрос</h3>
+<figure><img src="images/image19.png" alt="Пример твита с вопросом" loading="lazy"></figure>
+<p class="source"><a href="https://x.com/DawsonBotsford/status/1358674293106692097" target="_blank" rel="noopener">x.com/DawsonBotsford/status/1358674293106692097</a></p>
+<p class="meta"><span class="label">Каналы:</span> Facebook, LinkedIn, Twitter/X и т.д.</p>
+<p class="meta"><span class="label">Почему это работает:</span> Этот твит превратился в бизнес на $1M в год. Здесь всё дело в вопросе: «Сколько у вас невостребованных airdrop'ов?» Этот вопрос адресует боль, которую решает его продукт. А затем даёт чёткое, простое решение — как получить ответ, используя его приложение. Помогает и то, что с помощью его инструмента можно заработать тысячи долларов. Крипта… ну, как-то так.</p>
+<p class="meta"><span class="label">Как сделать у себя:</span> Думаю, этот можно скопировать и попробовать. Задайте вопрос, который добирается до корня боли, решаемой вашим продуктом. А затем дайте ссылку на ваше решение. Плюс добавьте визуала, как сделал Доусон. Уверен, это помогло.</p>
+</div>
+
+<div class="example">
+<h3><span class="num">#5</span> LinkedIn: «За X дней я сделал эту штуку»</h3>
+<figure><img src="images/image10.png" alt="Пример поста в LinkedIn" loading="lazy"></figure>
+<p class="source"><a href="https://www.linkedin.com/posts/patrickwalls_how-to-say-no-activity-6653330933665583105-i4eC" target="_blank" rel="noopener">linkedin.com/posts/patrickwalls…</a></p>
+<p class="meta"><span class="label">Каналы:</span> Facebook, LinkedIn, X</p>
+<p class="meta"><span class="label">Почему это работает:</span> Похоже на пример №1 про личную сеть: вы рассказываете своей сети, что ВЫ что-то построили и усердно над этим работали. Думаю, короткий формат со списком тоже работает, потому что точно говорит людям, что они получат. Завершите релейтбл-мыслью о том, почему это всем нужно и почему это важно.</p>
+<p class="meta"><span class="label">Как сделать у себя:</span> Можете скопировать это под свой проект. Расскажите людям, что вы построили и сколько это заняло. Добавьте красивое изображение или превью продукта.</p>
+<p class="meta"><span class="label">Ещё примеры:</span> <a href="https://www.linkedin.com/posts/davidbf_nocode-activity-7213087226014961664-ckVX" target="_blank" rel="noopener">linkedin.com/posts/davidbf_nocode…</a></p>
+</div>
+
+<div class="example">
+<h3><span class="num">#6</span> Twitter/X: «Я только что уволился» / лайф-апдейт</h3>
+<figure><img src="images/image9.png" alt="Пример твита I just quit my job" loading="lazy"></figure>
+<p class="meta"><span class="label">Каналы:</span> Twitter, Instagram, сообщества/форумы</p>
+<p class="meta"><span class="label">Почему это работает:</span> Обожаю простоту этого твита. Кэтт рассказала, что уволилась с работы, чтобы полностью гнаться за мечтой. Сложно не посочувствовать такой истории. Большинство её подписчиков, скорее всего, поддержат её, как смогут (подпишутся на рассылку, расшарят контент или даже наймут).</p>
+<p class="meta"><span class="label">Как сделать у себя:</span> Не обязательно увольняться, чтобы запостить нечто подобное 🙂 Просто используйте формат и расскажите о любой свежей новости, которая может заинтересовать людей и вовлечь их в вашу историю.</p>
+<p class="meta"><span class="label">Ещё примеры:</span> <a href="https://x.com/thisiskp_/status/1598006758890348544" target="_blank" rel="noopener">x.com/thisiskp_…</a>, <a href="https://x.com/hesselbom/status/1856372382518391136" target="_blank" rel="noopener">x.com/hesselbom…</a></p>
+</div>
+
+<div class="example">
+<h3><span class="num">#7</span> Личная сеть (ЛС/email): «брутфорс»</h3>
+<blockquote>«Мы все в шести рукопожатиях от Кевина Бейкона, верно? Значит, мы, наверное, в шести рукопожатиях вообще от всех. И вот спрашивать людей, у которых, как я знаю, есть какое-то влияние — пусть даже только в родительском комитете: „Эй, я создаю такую-то штуку. Ты не против поделиться ею? Знаешь кого-нибудь, кому это может быть интересно?“ Именно это, наверное, и привело меня к первым 1000–2000. И я не знала более вирусного способа сделать это, чем такой современный обход дверей. Вот что сработало у меня.»
+<cite>— Коди Санчес, в подкасте Nathan Barry Podcast</cite></blockquote>
+<p class="meta"><span class="label">Каналы:</span> Email, ЛС в LinkedIn, ЛС в Instagram, СМС</p>
+<p class="meta"><span class="label">Почему это работает:</span> Коди Санчес (основательница Contrarian Thinking) получила первую 1000 подписчиков, делая то, что может буквально каждый: она вручную писала друзьям и старым контактам из своего Gmail. Обожаю этот подход — отличный способ задействовать личную сеть, особенно когда у вас ещё нет большой аудитории или базы подписчиков в соцсетях. Это самое простое, что можно сделать прямо сейчас.</p>
+<p class="meta"><span class="label">Как сделать у себя:</span> Пройдитесь по своим контактам в LinkedIn. Пройдитесь по контактам в телефоне. Пролистайте недавние СМС. Пройдитесь по email. Напишите в ЛС нескольким людям, кто подписан на вас в Instagram. Отправьте им что-то личное и попросите расшарить или узнать, нет ли у них знакомых, кому это может понравиться.</p>
+<p class="meta"><span class="label">Ещё примеры:</span> <a href="https://i.imgur.com/JjdkdbU.png" target="_blank" rel="noopener">i.imgur.com/JjdkdbU.png</a> (рассылка The Peak), <a href="https://i.imgur.com/90ysb7k.png" target="_blank" rel="noopener">i.imgur.com/90ysb7k.png</a>, <a href="https://i.imgur.com/7QQ1Yyi.png" target="_blank" rel="noopener">i.imgur.com/7QQ1Yyi.png</a></p>
+</div>
+
+<div class="example">
+<h3><span class="num">#8</span> Email-аутрич: «Предлагаю это бесплатно»</h3>
+<figure><img src="images/image15.png" alt="Пример холодного письма" loading="lazy"></figure>
+<p class="meta"><span class="label">Каналы:</span> Email, ЛС в LinkedIn</p>
+<p class="meta"><span class="label">Почему это работает:</span> Это одно из немногих холодных писем, на которые я реально ответил, — и в итоге я даже воспользовался их услугой. Несколько причин, почему оно сработало на мне:</p>
+<ul>
+  <li>Предлагать услуги бесплатно — отличный способ получить первых клиентов.</li>
+  <li>Они объяснили, почему так делают, и были честны: «я набираю портфолио» — мне захотелось им помочь.</li>
+  <li>Мне понравилось, что они упомянули, почему это построили, как пришла идея, и связали это со своим личным опытом использования Starter Story.</li>
+</ul>
+<p class="meta"><span class="label">Как сделать у себя:</span> Думаю, в таких холодных письмах «меньше — значит больше». Изучите 5–10 компаний, которым был бы полезен ваш продукт/услуга. Подумайте, кого вы хотите в своё «портфолио» и как предложить это бесплатно. Лучшая часть: вам даже не нужен готовый продукт. Попробуйте разжечь интерес и получить несколько «бесплатных» заинтересованных клиентов. Можно буквально скопировать это письмо под своего «клиента мечты».</p>
+<p class="meta"><span class="label">Ещё примеры:</span> <a href="https://i.imgur.com/fSoHwpg.png" target="_blank" rel="noopener">i.imgur.com/fSoHwpg.png</a></p>
+</div>
+
+<div class="example">
+<h3><span class="num">#9</span> Quora: ответьте на вопрос с прямым намерением</h3>
+<figure><img src="images/image8.png" alt="Пример ответа на Quora" loading="lazy"></figure>
+<figure><img src="images/image3.png" alt="Пример ответа на Quora (продолжение)" loading="lazy"></figure>
+<p>Эта стратегия — из реального бизнеса, который теперь делает $24K MRR.</p>
+<p class="meta"><span class="label">Каналы:</span> Quora, Reddit</p>
+<p class="meta"><span class="label">Почему это работает:</span> Такие посты ранжируются в поисковиках. Вы пишете один комментарий или ответ — и его могут видеть десятки людей годами.</p>
+<p class="meta"><span class="label">Как сделать у себя:</span> Ищите в Google: <code>site:quora.com [вопрос, который решает ваш продукт]</code>. Оставляйте ответы под топовыми по рейтингу.</p>
+<p class="meta"><span class="label">Примечание:</span> Важно, чтобы у вопроса было намерение, связанное с вашим продуктом. В этом примере человек просит конкретный инструмент для своего сайта — и продукт Йориса это решает. Если прямого намерения нет, выиграть будет сложно, потому что объём будет небольшим.</p>
+<p class="meta"><span class="label">Ещё примеры:</span> <a href="https://www.starterstory.com/stories/how-davis-baer-used-unorthodox-marketing-to-reach-1-000-mrr#since-launch-what-has-worked-to-attract-and-retain-customers" target="_blank" rel="noopener">starterstory.com — How Davis Baer reached $1,000 MRR…</a></p>
+</div>
+
+<div class="example">
+<h3><span class="num">#10</span> IndieHackers: «Мои первые $X выручки!»</h3>
+<figure><img src="images/image2.png" alt="Пример поста на IndieHackers" loading="lazy"></figure>
+<p class="source"><a href="https://www.starterstory.com/stories/roast-my-landing-page-breakdown" target="_blank" rel="noopener">starterstory.com/stories/roast-my-landing-page-breakdown</a></p>
+<p class="meta"><span class="label">Каналы:</span> Indie Hackers, Reddit, онлайн-форумы</p>
+<p class="meta"><span class="label">Почему это работает:</span> Мы интервьюировали для Starter Story многих, кто делится успехом на IndieHackers. Я заметил, что большинство этих основателей сначала строили сообщество внутри IndieHackers. Это не подход «один выстрел», а серия откровенных постов/апдейтов на платформе, которая позволяет выстроить маленькое сообщество. Думаю, IH — отличная стратегия, но только если вы готовы регулярно постить и строить там сообщество. Это касается всех форумов/публичных каналов.</p>
+<p class="meta"><span class="label">Как сделать у себя:</span> Окунитесь в сообщество и начните вовлекаться/комментировать/изучать чужие проекты. Приносите пользу другим и поддерживайте их (не просто пиарьте своё). Смотрите на людей на той же стадии, что и вы (до выручки, после выручки и т.д.), и наблюдайте, что заходит. Пролистайте их историю постов. Что сработало? Что нет?</p>
+<p class="meta"><span class="label">Ещё примеры:</span> валидация/запуск — <a href="https://www.indiehackers.com/post/marketing-your-product-on-a-budget-come-talk-to-me-c7dda24f3a" target="_blank" rel="noopener">indiehackers.com — Marketing your product on a budget…</a></p>
+</div>
+
+<div class="example">
+<h3><span class="num">#9</span> LinkedIn: смиренная история + уроки с фото</h3>
+<figure><img src="images/image18.png" alt="Пример поста-истории в LinkedIn" loading="lazy"></figure>
+<p class="source">Ссылка на пост.</p>
+<p class="meta"><span class="label">Каналы:</span> LinkedIn, Twitter</p>
+<p class="meta"><span class="label">Почему это работает:</span> Люди любят смиренные истории. Фото здесь тоже сильно помогает — конкретно это передаёт «гринд»: сон на надувном матрасе и т.д.</p>
+<p class="meta"><span class="label">Как сделать у себя:</span> Формат прост:</p>
+<ul>
+  <li>Расскажите о своём скромном начале.</li>
+  <li>Расскажите, как вы преодолели эту борьбу и где вы сейчас, и дайте ссылку на то, что строите (это показывает авторитет).</li>
+  <li>Поделитесь несколькими уроками и сделайте их легко усваиваемыми.</li>
+  <li>Добавьте убойное фото, как это здесь.</li>
+</ul>
+<p>Обязательно отвечайте на каждый комментарий и оптимизируйте био, чтобы там была ссылка на то, что вы строите.</p>
+</div>
+
+<div class="example">
+<h3><span class="num">#11</span> TikTok: простое демо продукта</h3>
+<figure><img src="images/image20.png" alt="Пример видео-демо в TikTok" loading="lazy"></figure>
+<p class="source">Ссылка на пост.</p>
+<p class="meta"><span class="label">Каналы:</span> TikTok, IG Reels, YouTube Shorts</p>
+<p class="meta"><span class="label">Почему это работает:</span> Это единственное видео собирали минуту, а оно привело десятки тысяч регистраций в его приложение.</p>
+<p class="meta"><span class="label">Как сделать у себя:</span> Я спросил основателя напрямую — его ответ может изменить вашу жизнь.</p>
+</div>
+
+<div class="example">
+<h3><span class="num">#12</span> X: превратите плохую новость в хорошую</h3>
+<figure><img src="images/image4.png" alt="Пример твита: плохая новость в хорошую" loading="lazy"></figure>
+<p class="source">Ссылка на пост.</p>
+<p class="meta"><span class="label">Каналы:</span> уточняется</p>
+<p class="meta"><span class="label">Почему это работает:</span> уточняется</p>
+<p class="meta"><span class="label">Как сделать у себя:</span> уточняется</p>
+</div>
+
+<div class="example">
+<h3><span class="num">#13</span> X: горячее мнение, ведущее намерение</h3>
+<figure><img src="images/image5.png" alt="Пример твита с горячим мнением" loading="lazy"></figure>
+<p class="source">Ссылка на пост.</p>
+<p class="meta"><span class="label">Каналы:</span> уточняется</p>
+<p class="meta"><span class="label">Почему это работает:</span> уточняется</p>
+<p class="meta"><span class="label">Как сделать у себя:</span> уточняется</p>
+</div>
+
+<div class="example">
+<h3><span class="num">#14</span> X: POV</h3>
+<figure><img src="images/image12.png" alt="Пример твита в формате POV" loading="lazy"></figure>
+<p class="source">Ссылка на пост.</p>
+<p class="meta"><span class="label">Каналы:</span> уточняется</p>
+<p class="meta"><span class="label">Почему это работает:</span> уточняется</p>
+<p class="meta"><span class="label">Как сделать у себя:</span> уточняется</p>
+</div>
+
+<div class="example">
+<h3><span class="num">#15</span> LinkedIn: слайдшоу «Как я это построил»</h3>
+<figure><img src="images/image16.png" alt="Пример слайдшоу в LinkedIn" loading="lazy"></figure>
+<p class="source">Ссылка на пост.</p>
+<p class="meta"><span class="label">Каналы:</span> уточняется</p>
+<p class="meta"><span class="label">Почему это работает:</span> уточняется</p>
+<p class="meta"><span class="label">Как сделать у себя:</span> уточняется</p>
+</div>
+
+<div class="example">
+<h3><span class="num">#16</span> Начните разговор</h3>
+<figure><img src="images/image1.png" alt="Пример поста: начните разговор" loading="lazy"></figure>
+<p class="source">Ссылка на пост.</p>
+<p class="meta"><span class="label">Каналы:</span> уточняется</p>
+<p class="meta"><span class="label">Почему это работает:</span> уточняется</p>
+<p class="meta"><span class="label">Как сделать у себя:</span> уточняется</p>
+</div>
+
+<div class="example">
+<h3><span class="num">#17</span> Twitter/X: «Мне 17, и я построил это»</h3>
+<figure><img src="images/image6.png" alt="Пример твита подростка-основателя" loading="lazy"></figure>
+<p class="source">Ссылка на пост.</p>
+<p class="meta"><span class="label">Каналы:</span> Twitter/X, LinkedIn</p>
+<p class="meta"><span class="label">Почему это работает:</span> Здесь всё дело в истории. Семнадцатилетний делает ИИ-приложение? Люди это обожают. Это лично и аутентично. Он просто парень, который делится крутой штукой, которую сделал и над которой усердно работал. Видео в Loom усиливает эффект, потому что показывает: он реальный билдер, а не просто говорит об идее. Коротко, просто, честно — поэтому и работает.</p>
+<p class="meta"><span class="label">Как сделать у себя:</span> Не переусложняйте. Расскажите свою историю так, чтобы это звучало по-настоящему. Если вы молоды, неопытны или только начинаете — опирайтесь на это. Люди любят аутсайдеров. Используйте Loom, чтобы записать короткое, простое видео с демонстрацией продукта.</p>
+</div>
+
+<h2>Будет добавлено в этот документ</h2>
+<ul>
+  <li>Пост Build in Public в LinkedIn — цель.</li>
+  <li>Пост Build in Public в X.</li>
+  <li>Запуск на Product Hunt с демо-видео.</li>
+  <li>Пост Build in Public в Facebook.</li>
+  <li>Пост Build in Public в Instagram.</li>
+  <li>Build in public: короткие видео — TikTok/Reels.</li>
+  <li>Апдейты по выручке / скриншот Stripe: X.</li>
+  <li>Апдейт о первом долларе / скриншот Stripe: LinkedIn.</li>
+  <li>Апдейты по подписчикам / любые апдейты.</li>
+  <li>Product Hunt.</li>
+  <li>Запуск рекламы (пример от Джейкоба). Brumate: <a href="https://i.imgur.com/MGgcGlI.png" target="_blank" rel="noopener">i.imgur.com/MGgcGlI.png</a></li>
+</ul>
+
+<figure><img src="images/image17.png" alt="Завершающая иллюстрация" loading="lazy"></figure>
+
+<footer>
+  <p>$1M Attention. Перевод на русский язык. Все изображения — из оригинального документа.</p>
+</footer>
+
+</div>
+</body>
+</html>
